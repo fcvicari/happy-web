@@ -4,21 +4,21 @@ import { Button, Flex, Grid, Heading, Text } from '@chakra-ui/core';
 import { FiArrowRight } from 'react-icons/fi';
 
 import Logo from '../assets/logo.svg';
-import BackgroudImage from '../assets/background.svg';
+import BackgroudImage from '../assets/back.png';
 
 const Home: React.FC = () => {
   return (
     <Grid
       as="main"
       backgroundColor="blue.300"
-      templateColumns="1fr 300px 550px 200px 1fr"
+      templateColumns="1fr 300px 700px 1fr"
       templateRows="1fr 680px 1fr"
       height="100vh"
       width="100vw"
       templateAreas="
-        '. . . . .'
-        '. logo background logon .'
-        '. . . . .'
+        '. . . . '
+        '. logo logon .'
+        '. . . . '
       "
       justifyContent="center"
       alignItems="center"
@@ -50,18 +50,20 @@ const Home: React.FC = () => {
           Visite uma casa de acolhimento e mude o dia de muitas crianças.
         </Heading>
       </Flex>
-      <Flex gridArea="background" width="100%" height="100%">
-        <BackgroudImage />
-      </Flex>
 
       <Flex
         gridArea="logon"
         flexDir="column"
         justifyContent="space-between"
+        paddingBottom={8}
+        paddingTop={12}
         alignItems="flex-end"
         justifySelf="padding"
         width="100%"
         height="100%"
+        backgroundImage={`url(${BackgroudImage})`}
+        backgroundPosition="left center"
+        backgroundRepeat="no-repeat"
       >
         <Heading fontWeight="bold" fontSize={20}>
           São Miguel do Oeste
