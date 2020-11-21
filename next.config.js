@@ -7,4 +7,9 @@ module.exports = withImages({
   publicRuntimeConfig: {
     staticFolder: '/static',
   },
+  fileExtensions: ["jpg", "jpeg", "png", "gif"],
+  dynamicAssetPrefix: true,
+  webpack(config, options) {
+    return config
+  }
 })
