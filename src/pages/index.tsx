@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Flex, Grid, Heading, Text } from '@chakra-ui/core';
+import { Button, Flex, Grid, Heading } from '@chakra-ui/react';
 
 import { FiArrowRight } from 'react-icons/fi';
 
