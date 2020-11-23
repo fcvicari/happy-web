@@ -38,6 +38,7 @@ const Home: React.FC = () => {
           lineHeight={0.9}
           paddingTop={48}
           fontSize={64}
+          color="white"
         >
           Leve felicidade para o mundo
         </Heading>
@@ -46,6 +47,7 @@ const Home: React.FC = () => {
           fontWeight="normal"
           paddingTop={16}
           lineHeight={1.4}
+          color="white"
         >
           Visite uma casa de acolhimento e mude o dia de muitas crianças.
         </Heading>
@@ -65,7 +67,7 @@ const Home: React.FC = () => {
         backgroundPosition="left center"
         backgroundRepeat="no-repeat"
       >
-        <Heading fontWeight="bold" fontSize={20}>
+        <Heading fontWeight="bold" color="white" fontSize={20}>
           São Miguel do Oeste
           <Heading fontWeight="normal" fontSize={16}>
             Santa Catarina
@@ -73,11 +75,14 @@ const Home: React.FC = () => {
         </Heading>
         <Button
           backgroundColor="yellow.500"
-          height="80px"
-          width="80px"
+          color="yellow.900"
+          height={20}
+          width={20}
           borderRadius="lg"
+          boxShadow="md"
+          _hover={{ bg: 'blue.100', color: 'blue.300' }}
         >
-          <FiArrowRight color="#8D734B" fontSize={32} fontWeight="bold" />
+          <FiArrowRight fontSize={32} fontWeight="bold" />
         </Button>
       </Flex>
     </Grid>

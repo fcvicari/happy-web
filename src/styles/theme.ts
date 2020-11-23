@@ -24,7 +24,8 @@ const customTheme = extendTheme({
     blue: {
       ...theme.colors.blue,
       100: '#96FEFF',
-      300: '#29B6D1',
+      300: '#15C3D6',
+      500: '#29B6D1',
     },
     gray: {
       ...theme.colors.gray,
@@ -33,6 +34,7 @@ const customTheme = extendTheme({
     yellow: {
       ...theme.colors.yellow,
       500: '#FFD666',
+      900: '#8D734B',
     },
   },
 });
