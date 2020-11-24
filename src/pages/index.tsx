@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button, Flex, Grid, Heading } from '@chakra-ui/react';
+import { Flex, Grid, Heading, Link } from '@chakra-ui/react';
 
 import { FiArrowRight } from 'react-icons/fi';
 
@@ -73,7 +73,10 @@ const Home: React.FC = () => {
             Santa Catarina
           </Heading>
         </Heading>
-        <Button
+        <Link
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
           backgroundColor="yellow.500"
           color="yellow.900"
           height={20}
@@ -81,9 +84,10 @@ const Home: React.FC = () => {
           borderRadius="lg"
           boxShadow="md"
           _hover={{ bg: 'blue.100', color: 'blue.300' }}
+          href="/OrphanagesMap"
         >
           <FiArrowRight fontSize={32} fontWeight="bold" />
-        </Button>
+        </Link>
       </Flex>
     </Grid>
   );
