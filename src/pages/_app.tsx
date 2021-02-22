@@ -1,16 +1,17 @@
 import React from 'react';
 import { AppProps } from 'next/app';
 
-import ThemeContainer from '../contexts/theme/ThemeContainer';
+import { ChakraProvider } from '@chakra-ui/react';
+import customTheme from '../styles/theme';
 
 const MyApp: React.FC<AppProps> = ({ Component, pageProps }) => {
   return (
-    <ThemeContainer>
+    <ChakraProvider theme={customTheme}>
       <head>
         <title>Happy - Faça uma criança feliz</title>
       </head>
       <Component {...pageProps} />
-    </ThemeContainer>
+    </ChakraProvider>
   );
 };
 
